@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Programación Web\\Examen1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Examen1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Examen1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Programación Web\\Examen1\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Programación Web\\Examen1\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Programación Web\\Examen1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Programación Web\\Examen1\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Examen1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Examen1.props",
+      "PackagePath": "build\\Examen1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Examen1.props",
+      "PackagePath": "buildMultiTargeting\\Examen1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Examen1.props",
+      "PackagePath": "buildTransitive\\Examen1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

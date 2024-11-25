@@ -1,0 +1,51 @@
+﻿@page "/"
+@page "/Inicio"
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+@inject TardanzaServicio TardanzaServicio
+
+<PageTitle>Inicio</PageTitle>
+
+<h1>Registro de Tardanzas</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Matrícula</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Curso</th>
+            <th>Fecha/Hora</th>
+            <th>Motivo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tardanza in TardanzaServicio.ObtenerTardanzas())
+        {
+            <tr>
+                <td>@tardanza.Estudiantes.Matricula</td>
+                <td>@tardanza.Estudiantes.Nombre</td>
+                <td>@tardanza.Estudiantes.Apellido</td>
+                <td>@tardanza.Estudiantes.Curso</td>
+                <td>@tardanza.FechaHora.ToString("dd/mm/yyyy HH:mm:ss")</td>
+                <td>@tardanza.Motivo</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button id="botonInsertar" class="btn btn-primary" @onclick="NuevaTardanza">Insertar</button>
+
+@code
+{
+    protected override void OnInitialized()
+    {
+
+    }
+    public void NuevaTardanza()
+    {
+        NavigationManager.NavigateTo("/registrar-tardanza");
+    }
+}
+
+
